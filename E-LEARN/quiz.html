@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E-GOV</title>
+		<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+                <header id="header">
+                    <h1><a href="index.html">E-GOV</a></h1>
+                    <nav class="links">
+                    </nav>
+                    <nav class="main">
+                        <ul>
+                            <li class="search">
+                                <a class="fa-search" href="#search">Search</a>
+                                <form id="search" method="get" action="#">
+                                    <input type="text" name="query" placeholder="Search" />
+                                </form>
+                            </li>
+                            <li>
+                                  <h3><a href="./login.html" class="button large fit">Log Out</a></h3>
+                            </li>
+                            <li class="menu">
+                                <a class="fa-bars" href="#menu">Menu</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+                        <section>
+                            <ul class="links">
+                                <li>
+                                    <a href="#">
+                                        <h3>Link1</h3>
+                                        <p>Access link1</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>Link2</h3>
+                                        <p>Access link2</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>Link3</h3>
+                                        <p>Access link3</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <ul class="actions stacked">
+                                <li><a href="./login.html" class="button large fit">Log out</a></li>
+                            </ul>
+                        </section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Quiz</a></h2>
+										<p>Test Your Skills</p>
+									</div>
+								</header>
+                <body>
+                  <header class="header ">
+                      <div class="right-title">Total Questions: <span id="tque"></span></div>
+                      <div class="clearfix"></div>
+                  </header>
+                  <div class="content">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <div id="result" class="quiz-body">
+                                      <form name="quizForm" onSubmit="">
+                                          <fieldset class="form-group">
+                                              <h4><span id="qid">1.</span> <span id="question"></span></h4>
+                                              <div class="option-block-container" id="question-options"> </div>
+                                          </fieldset> <button name="previous" id="previous">Previous</button>
+                                          &nbsp; <button name="next" id="next">Next</button>
+                                      </form>
+                                  </div>
+                              </div> <!-- End of col-sm-12 -->
+                          </div> <!-- End of row -->
+                      </div> <!-- ENd of container fluid -->
+                  </div>
+                    </body>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+      <script src="assets/js/app.js"></script>
+            <script>
+                function updateTime() {
+                  var now = new Date();
+                  var dateTime = now.toLocaleString();
+                  document.getElementById("date-time").innerHTML = dateTime;
+                }
+                setInterval(updateTime, 1000);
+              </script>
+
+	</body>
+</html>
