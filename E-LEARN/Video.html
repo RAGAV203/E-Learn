@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E-LEARN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+                <header id="header">
+                    <h1><a href="index.html">E-LEARN</a></h1>
+                    <nav class="links">
+                    </nav>
+                    <nav class="main">
+                        <ul>
+                            <li>
+                                  <h3><a href="./login.html" class="button large fit">Log Out</a></h3>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+				
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">VIDEO</a></h2>
+										<p>EASY-ACCESS</p>
+									</div>
+									<div class="meta">
+                                        <span id="date-time"></span>
+									</div>
+								</header>
+								<h4>Select language</h4>
+                                <select id="category-select">
+                                    <option value="">Select a language</option>
+                                    <option value="English">English</option>
+                                    <option value="Tamil">Tamil</option>
+                                    <option value="Hindi">Hindi</option>
+                                  </select>
+								
+							</article>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+                function updateTime() {
+                  var now = new Date();
+                  var dateTime = now.toLocaleString();
+                  document.getElementById("date-time").innerHTML = dateTime;
+                }
+                setInterval(updateTime, 1000);
+              </script>
+
+	</body>
+</html>
